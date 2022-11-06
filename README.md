@@ -7,11 +7,22 @@ Overall, we used the T5 model provided by KT, but we would like to inform you th
 ![image](https://user-images.githubusercontent.com/77087144/200172925-2aed22fb-8879-4a96-9a9f-1e590be01c1f.png)
 
 # Configuration of Implementation
+* [How to start](#How-to-start)
 * [How to preprocess](#How-to-preprocess)
 * [How to train](#How-to-train)
 * [How to find best model](#How-to-find-best-model)
 * [How to infer](#How-to-infer)
-* [How to start](#How-to-start)
+
+---
+
+## How to start
+
+### Clone project and install modules
+```
+git clone https://github.com/kkjsw17/KU-NLP-kt-dev-challenge-2022.git
+cd KU-NLP-kt-dev-challenge-2022
+pip install -r ./assets/requirements.txt
+```
 
 ---
 
@@ -20,12 +31,20 @@ preprocessor.py
 * To use T5 Encoder only model, the sentence must be changed to a tensor.
 * This is used to transform from sentence to tensor.
 
+```
+python preprocessor.py
+```
+
 ---
 
 ## How to train
 train.py
 * This is used to train T5 encoder-decoder model.
 * Cannot disclose train code for encoder only models due to confidentiality. 
+
+```
+python train.py
+```
 
 ---
 
@@ -37,6 +56,11 @@ search_ensemble_f1.py
 * This is used to search optimal combination.
 * The method searching best combination used the idea of the hard-voting.
 
+```
+python search_hyperparams.py
+python search_ensemble_f1.py
+```
+
 ---
 
 ## How to infer
@@ -45,10 +69,12 @@ infer.py and infer_encoder.py
 * infer.py is used to infer results using T5 encoder-decoder model
 * infer_encoder.py is used to infer results using T5 encoder only model. But due to confidentiality, this code is not perfect code.
 
+```
+python infer.py
+python infer_encoder.py
+```
+
 ---
 
-## How to start
-
-### Clone project and install modules
-
-
+## Results
+We won the first prize by this project, and T5 Encoder only model has better result than T5 Encoder-Decoder model
