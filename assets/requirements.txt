@@ -1,0 +1,6 @@
+transformers
+pandas
+sentencepiece
+python-dotenv
+wandb
+argparse

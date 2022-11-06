@@ -1,1 +1,1 @@
-# KU-NLP-kt-dev-challenge-2022
+# kt-dev-challenge-2022
