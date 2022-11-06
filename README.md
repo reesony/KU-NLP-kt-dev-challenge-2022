@@ -43,7 +43,7 @@ train.py
 * Cannot disclose train code for encoder only models due to confidentiality. 
 
 ```
-python train.py
+sh train.sh
 ```
 
 ---
@@ -70,8 +70,8 @@ infer.py and infer_encoder.py
 * infer_encoder.py is used to infer results using T5 encoder only model. But due to confidentiality, this code is not perfect code.
 
 ```
-python infer.py
-python infer_encoder.py
+sh infer.sh
+sh infer_encoder.sh
 ```
 
 ---
