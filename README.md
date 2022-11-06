@@ -9,6 +9,10 @@ Overall, we used the T5 model provided by KT, but we would like to inform you th
 # Configuration of Implementation
 * [How to infer](#inference)
   *
+  
+---
+
+## inference
 
 
 * [How to im](#how-to-install)
