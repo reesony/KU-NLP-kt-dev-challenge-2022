@@ -5,7 +5,6 @@ import torch
 import numpy as np
 import pandas as pd
 from datasets import Dataset
-from encoder_only_models import KTULMEncoderForTokenClassificationSimple
 from sklearn.model_selection import KFold
 import re
 from preprocessor import preprocessor
@@ -120,7 +119,7 @@ if(__name__=="__main__"):
     
     data_collator = DefaultDataCollator()
     
-    model = KTULMEncoderForTokenClassificationSimple.from_pretrained(test_model_path)
+    model = AutomodelForTokenClassification.from_pretrained(test_model_path)
     tokenzier = T5Tokenizer.from_pretrained(model_path)
     
     trainer = Trainer(
